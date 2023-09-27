@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700);
+
+body {
+    background: #00709a
+}
+
+#hovered-region,
+
+#clicked-region {
+    background: #01374d;
+    border: 1px solid #e5eabd;
+    color: #e4b045;
+    display: inline-block;
+    font: normal 10pt 'Ubuntu Mono';
+    margin-right: 3px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 170px
+}
+
+#hovered-region span,
+#clicked-region span {
+    color: #e4e770;
+    font-weight: bold
+}
+
+#brazil-map {
+    margin: 10px auto;
+    height: 1000px;
+    width: 1500px;
+}
+
+svg {
+    touch-action: none;
+}
+
+
+path {
+    fill: rgb(2, 178, 255);
+    fill-opacity: 1;
+    stroke: white;
+    /* stroke-linecap: round !important; */
+    /* border-radius: 20px; */
+    stroke-width: 0.4;
+    stroke-opacity: 1;
+    fill-rule: evenodd;
+    cursor: pointer;
+}
+
+/* Alterando cor de Municipio Hover */
+path:hover {
+    fill: red !important;
+}
+
+/* Alterando cor de Municipio pelo id  */
+path[data-code="mun_2611606"] {
+    fill: pink !important;
+}
